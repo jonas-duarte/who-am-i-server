@@ -1,6 +1,6 @@
 const WebSocket = require("ws");
 
-const port = proces.env.SERVER_PORT || 8080;
+const port = process.env.SERVER_PORT || 8080;
 
 console.log(`Server is running on port ${port}`);
 
