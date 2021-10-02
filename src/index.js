@@ -5,7 +5,7 @@ const wss = new WebSocket.Server({ port: 8080 });
 const rooms = {};
 
 wss.on("connection", function connection(ws) {
-  const player = { ws, name: null, character: "teste", room: null };
+  const player = { ws, name: null, character: "...", room: null };
 
   ws.on("message", function incoming(message) {
     const { type, payload } = JSON.parse(message);
